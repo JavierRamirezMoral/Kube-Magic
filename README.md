@@ -2,7 +2,7 @@
 
 **Proyecto realizado para el módulo de proyecto de ASIR sobre Kubernetes.**
 
-Con este proyecto lo que pretendo es utilizar Kubernetes y otras herramientas complementarias a esta tecnología para establecer un entorno funcional de distintas aplicaciones desplegándolas a través de Kubernetes, implementando Azure Kubernetes Service y monitorearlas con Prometheus, Grafana y Azure Monitor. Para ello voy a seguir las siguientes partes/fases que he diferenciado de las que constará este proyecto.
+<p style="text-align: justify;">Con este proyecto lo que pretendo es utilizar Kubernetes y otras herramientas complementarias a esta tecnología para establecer un entorno funcional de distintas aplicaciones desplegándolas a través de Kubernetes, implementando Azure Kubernetes Service y monitorearlas con Prometheus, Grafana y Azure Monitor. Para ello voy a seguir las siguientes partes/fases que he diferenciado de las que constará este proyecto.</p>
 
 ## Primera Parte:
 <p style="text-align: justify;"> En esta primera parte voy a explicar de manera general los conceptos básicos necesarios para entender bien que es Kubernetes, cómo funciona y que podemos hacer con él. también repasaremos los conceptos y objetos que forman parte de Kubernetes. Además de cómo yo lo he usado para llevar a cabo mi proyecto. Estimo que esta parte de investigación y documentación me tome toda la duración del proyecto.</p>
