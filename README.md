@@ -33,7 +33,7 @@ Elementos de configuración que también incluiré en esta parte:
 * Volúmenes persistentes.
 
 <div>
-    <img  width="100%" src="https://github.com/JavierRamirezMoral/Kube-Magic/blob/main/Documentaci%C3%B3n%20Presentaci%C3%B3n/1.jpg">
+    <img  width="100%" src="https://github.com/JavierRamirezMoral/Kube-Magic/blob/main/Documentaci%C3%B3n%20Presentaci%C3%B3n/2.jpg">
 </div>
 
 ## Tercera Parte:
@@ -44,10 +44,14 @@ Elementos de configuración que también incluiré en esta parte:
   * Crear un clúster nuevo, mediante el portal de Azure.
   * Desplegar las dos aplicaciones similares a las de la segunda parte mediante HELM CHARTS.
       
-![Alt text](https://github.com/JavierRamirezMoral/Kube-Magic/assets/101793125/b45dbb87-9de4-4498-a45c-b7ce11bec03c)
+<div>
+    <img  width="100%" src="https://github.com/JavierRamirezMoral/Kube-Magic/blob/main/Documentaci%C3%B3n%20Presentaci%C3%B3n/3.jpg">
+</div>
 
 ## Cuarta Parte:
  <div align="justify"> En esta parte vamos a añadir y configurar el monitoreo de nuestro escenario usando las siguientes herramientas que iremos viendo a continuación. Para asegurarnos de que todo funciona correctamente en nuestros escenarios.Con Prometheus, Grafana y Azure Monitor empleando reglas, parámetros y métricas.Azure Monitor es un servicio de monitoreo y diagnóstico de aplicaciones y recursos en la nube de Microsoft Azure. Prometheus es un sistema de monitoreo y alerta de código abierto que se utiliza para recopilar y almacenar métricas de diferentes componentes de un clúster de Kubernetes, como pods, contenedores, nodos, servicios y redes. Grafana, por su parte, es una herramienta de visualización y análisis de datos que permite a los usuarios crear paneles y gráficos personalizados a partir de las métricas recopiladas por Prometheus.</div> <br>
 
-![Alt text](https://github.com/JavierRamirezMoral/Kube-Magic/assets/101793125/0d7ff5b1-d4f4-489a-804a-041b109ea363)
+<div>
+    <img  width="100%" src="https://github.com/JavierRamirezMoral/Kube-Magic/blob/main/Documentaci%C3%B3n%20Presentaci%C3%B3n/4.jpg">
+</div>
 
