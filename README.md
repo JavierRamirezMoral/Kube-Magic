@@ -32,8 +32,8 @@ Elementos de configuración que también incluiré en esta parte:
 * Stateful and deployment.
 * Volúmenes persistentes.
 
-<div>
-    <img align="center" width="100%" src="https://github.com/JavierRamirezMoral/Kube-Magic/blob/main/Documentaci%C3%B3n%20Presentaci%C3%B3n/1.jpg">
+<div align="center">
+    <img  width="100%" src="https://github.com/JavierRamirezMoral/Kube-Magic/blob/main/Documentaci%C3%B3n%20Presentaci%C3%B3n/1.jpg">
 </div>
 
 ## Tercera Parte:
