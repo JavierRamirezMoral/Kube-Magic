@@ -24,11 +24,11 @@ Sería algo así:
       5. Y llega al pod de MariaDB donde se autentifica con las credenciales.
       
 Elementos de configuración que también incluiré en esta parte:
-      • Namespaces para cada pod.
-      • Cuotas y límites de recursos.
-      • Uso de labels.
-      • Stateful and deployment.
-      • Volúmenes persistentes.
+      * Namespaces para cada pod.
+      * Cuotas y límites de recursos.
+      * Uso de labels.
+      * Stateful and deployment.
+      * Volúmenes persistentes.
       
 ![Alt text](https://github.com/JavierRamirezMoral/Kube-Magic/assets/101793125/e22e2072-722f-4128-9063-d3b2f2b74abd)
 
@@ -36,9 +36,9 @@ Elementos de configuración que también incluiré en esta parte:
 
 <p style="text-align: justify;">Para esta parte me serviré de Azure Kubernetes Service que es un servicio de orquestación de contenedores completamente administrado que se ejecuta en Microsoft Azure. AKS proporciona un entorno de clúster de Kubernetes que simplifica la implementación, la administración y la escalabilidad de aplicaciones en contenedores. Con AKS, podemos implementar rápidamente aplicaciones de contenedores en un entorno altamente disponible y escalable. Integrar el clúster de la segunda parte. En esta parte lo que pretendo es integrar el clúster donde tenemos el primer escenario ya creado para poder administrarlo de manera más eficiente desde Azure. Y posteriormente montar el segundo set up creando un nuevo clúster con dos aplicaciones desplegadas por HELM en el también para la segunda página web con su correspondiente base de datos.</p>
 
-      • Integrar el clúster recién creado en la segunda parte en la nube de Azure.
-      • Crear un clúster nuevo, mediante el portal de Azure.
-      • Desplegar las dos aplicaciones similares a las de la segunda parte mediante HELM CHARTS.
+  * Integrar el clúster recién creado en la segunda parte en la nube de Azure.
+  * Crear un clúster nuevo, mediante el portal de Azure.
+  * Desplegar las dos aplicaciones similares a las de la segunda parte mediante HELM CHARTS.
       
 ![Alt text](https://github.com/JavierRamirezMoral/Kube-Magic/assets/101793125/b45dbb87-9de4-4498-a45c-b7ce11bec03c)
 
