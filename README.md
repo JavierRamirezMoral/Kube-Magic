@@ -17,6 +17,7 @@ Voy a desplegar dos aplicaciones para hacer un típico set up de aplicaciones we
  <div align="justify"> Primero instalo minikube para crear el clúster y luego me sirvo de kubectl para interactuar y hacer todas las operaciones pertinentes en él. Voy a crear el pod para MariaDB con un Deployment y un internal service para comunicarme con él y que no reciba peticiones del exterior del clúster, solo los elementos que estén dentro del mismo clúster. Después voy a crear el pod para WordPress con un deployment donde tendré la URL de MariaDB dentro de un ConfigMap para poder conectarme a ella. Además de que tendrá  una autentificación para acceder a la base de datos, esto lo haré en el deployment (archivo  yaml) que tendrá dentro definido un Secret con las credenciales. Una vez tenga todo esto, voy a necesitar que Wordpress sea accesible a través de un navegador, para ello voy a crear un External service. Con esto voy a permitir peticiones desde el exterior para hablar con el pod. </div>
 
 Sería algo así: 
+
 1. La petición llega del navegador.
 2. Llega al External service del Wordpress.
 3. Se envía así al pod de WordPress.
@@ -24,6 +25,7 @@ Sería algo así:
 5. Y llega al pod de MariaDB donde se autentifica con las credenciales.
       
 Elementos de configuración que también incluiré en esta parte:
+
 * Namespaces para cada pod.
 * Cuotas y límites de recursos.
 * Uso de labels.
