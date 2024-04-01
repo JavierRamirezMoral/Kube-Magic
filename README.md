@@ -5,7 +5,7 @@ _Proyecto realizado para el módulo de proyecto de ASIR sobre Kubernetes._
  <div align="justify"> Con este proyecto lo que pretendo es utilizar Kubernetes y otras herramientas complementarias a esta tecnología para establecer un entorno funcional de distintas aplicaciones desplegándolas a través de Kubernetes, implementando Azure Kubernetes Service y monitorearlas con Prometheus, Grafana y Azure Monitor. Para ello voy a seguir las siguientes partes/fases que he diferenciado de las que constará este proyecto. </div>
 
 ## Primera Parte:
- <div align="justify">En esta primera parte voy a explicar de manera general los conceptos básicos necesarios para entender bien que es Kubernetes, cómo funciona y que podemos hacer con él. también repasaremos los conceptos y objetos que forman parte de Kubernetes. Además de cómo yo lo he usado para llevar a cabo mi proyecto. Estimo que esta parte de investigación y documentación me tome toda la duración del proyecto. </div>
+ <div align="justify">En esta primera parte voy a explicar de manera general los conceptos básicos necesarios para entender bien que es Kubernetes, cómo funciona y que podemos hacer con él. también repasaremos los conceptos y objetos que forman parte de Kubernetes. Además de cómo yo lo he usado para llevar a cabo mi proyecto. Estimo que esta parte de investigación y documentación me tome toda la duración del proyecto. </div> <br>
 
 ![Alt text](https://github.com/JavierRamirezMoral/Kube-Magic/assets/101793125/2e29e27a-7dad-4717-b9d2-6b3f443cf460)
 
@@ -24,12 +24,12 @@ Sería algo así:
 5. Y llega al pod de MariaDB donde se autentifica con las credenciales.
       
 Elementos de configuración que también incluiré en esta parte:
-      * Namespaces para cada pod.
-      * Cuotas y límites de recursos.
-      * Uso de labels.
-      * Stateful and deployment.
-      * Volúmenes persistentes.
-      
+* Namespaces para cada pod.
+* Cuotas y límites de recursos.
+* Uso de labels.
+* Stateful and deployment.
+* Volúmenes persistentes.
+     
 ![Alt text](https://github.com/JavierRamirezMoral/Kube-Magic/assets/101793125/e22e2072-722f-4128-9063-d3b2f2b74abd)
 
 ## Tercera Parte:
@@ -43,7 +43,7 @@ Elementos de configuración que también incluiré en esta parte:
 ![Alt text](https://github.com/JavierRamirezMoral/Kube-Magic/assets/101793125/b45dbb87-9de4-4498-a45c-b7ce11bec03c)
 
 ## Cuarta Parte:
- <div align="justify"> En esta parte vamos a añadir y configurar el monitoreo de nuestro escenario usando las siguientes herramientas que iremos viendo a continuación. Para asegurarnos de que todo funciona correctamente en nuestros escenarios.Con Prometheus, Grafana y Azure Monitor empleando reglas, parámetros y métricas.Azure Monitor es un servicio de monitoreo y diagnóstico de aplicaciones y recursos en la nube de Microsoft Azure. Prometheus es un sistema de monitoreo y alerta de código abierto que se utiliza para recopilar y almacenar métricas de diferentes componentes de un clúster de Kubernetes, como pods, contenedores, nodos, servicios y redes. Grafana, por su parte, es una herramienta de visualización y análisis de datos que permite a los usuarios crear paneles y gráficos personalizados a partir de las métricas recopiladas por Prometheus.</div>
+ <div align="justify"> En esta parte vamos a añadir y configurar el monitoreo de nuestro escenario usando las siguientes herramientas que iremos viendo a continuación. Para asegurarnos de que todo funciona correctamente en nuestros escenarios.Con Prometheus, Grafana y Azure Monitor empleando reglas, parámetros y métricas.Azure Monitor es un servicio de monitoreo y diagnóstico de aplicaciones y recursos en la nube de Microsoft Azure. Prometheus es un sistema de monitoreo y alerta de código abierto que se utiliza para recopilar y almacenar métricas de diferentes componentes de un clúster de Kubernetes, como pods, contenedores, nodos, servicios y redes. Grafana, por su parte, es una herramienta de visualización y análisis de datos que permite a los usuarios crear paneles y gráficos personalizados a partir de las métricas recopiladas por Prometheus.</div> <br>
 
 ![Alt text](https://github.com/JavierRamirezMoral/Kube-Magic/assets/101793125/0d7ff5b1-d4f4-489a-804a-041b109ea363)
 
