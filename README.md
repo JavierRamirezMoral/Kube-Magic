@@ -14,10 +14,10 @@ _Proyecto realizado para el módulo de proyecto de ASIR sobre Kubernetes._
 Voy a desplegar dos aplicaciones para hacer un típico set up de aplicaciones web con bases de datos:
       • Una aplicación Web (Wordpress o Apache, por ejemplo)
       • Una base de datos (MariaDB o MySQL, por ejemplo)
- <div align="justify"> Primero instalo minikube para crear el clúster y luego me sirvo de kubectl para interactuar y hacer todas las operaciones pertinentes en él. Voy a crear el pod para MariaDB con un Deployment y un internal service para comunicarme con él y que no reciba peticiones del exterior del clúster, solo los elementos que estén dentro del mismo clúster. Después voy a crear el pod para WordPress con un deployment donde tendré la URL de MariaDB dentro de un ConfigMap para poder conectarme a ella. Además de que tendrá  una autentificación para acceder a la base de datos, esto lo haré en el deployment (archivo  yaml) que tendrá dentro definido un Secret con las credenciales. Una vez tenga todo esto, voy a necesitar que Wordpress sea accesible a través de un navegador, para ello voy a crear un External service. Con esto voy a permitir peticiones desde el exterior para hablar con el pod. </div>
+ <div align="justify"> Primero instalo minikube para crear el clúster y luego me sirvo de kubectl para interactuar y hacer todas las operaciones pertinentes en él. Voy a crear el pod para MariaDB con un Deployment y un internal service para comunicarme con él y que no reciba peticiones del exterior del clúster, solo los elementos que estén dentro del mismo clúster. Después voy a crear el pod para WordPress con un deployment donde tendré la URL de MariaDB dentro de un ConfigMap para poder conectarme a ella. Además de que tendrá  una autentificación para acceder a la base de datos, esto lo haré en el deployment (archivo  yaml) que tendrá dentro definido un Secret con las credenciales. Una vez tenga todo esto, voy a necesitar que Wordpress sea accesible a través de un navegador, para ello voy a crear un External service. Con esto voy a permitir peticiones desde el exterior para hablar con el pod. </div> <br>
 
 Sería algo así: 
-<br>
+
 1. La petición llega del navegador.
 2. Llega al External service del Wordpress.
 3. Se envía así al pod de WordPress.
@@ -36,7 +36,7 @@ Elementos de configuración que también incluiré en esta parte:
 
 ## Tercera Parte:
 
- <div align="justify">Para esta parte me serviré de Azure Kubernetes Service que es un servicio de orquestación de contenedores completamente administrado que se ejecuta en Microsoft Azure. AKS proporciona un entorno de clúster de Kubernetes que simplifica la implementación, la administración y la escalabilidad de aplicaciones en contenedores. Con AKS, podemos implementar rápidamente aplicaciones de contenedores en un entorno altamente disponible y escalable. Integrar el clúster de la segunda parte. En esta parte lo que pretendo es integrar el clúster donde tenemos el primer escenario ya creado para poder administrarlo de manera más eficiente desde Azure. Y posteriormente montar el segundo set up creando un nuevo clúster con dos aplicaciones desplegadas por HELM en el también para la segunda página web con su correspondiente base de datos.</div>
+ <div align="justify">Para esta parte me serviré de Azure Kubernetes Service que es un servicio de orquestación de contenedores completamente administrado que se ejecuta en Microsoft Azure. AKS proporciona un entorno de clúster de Kubernetes que simplifica la implementación, la administración y la escalabilidad de aplicaciones en contenedores. Con AKS, podemos implementar rápidamente aplicaciones de contenedores en un entorno altamente disponible y escalable. Integrar el clúster de la segunda parte. En esta parte lo que pretendo es integrar el clúster donde tenemos el primer escenario ya creado para poder administrarlo de manera más eficiente desde Azure. Y posteriormente montar el segundo set up creando un nuevo clúster con dos aplicaciones desplegadas por HELM en el también para la segunda página web con su correspondiente base de datos.</div> <br>
 
   * Integrar el clúster recién creado en la segunda parte en la nube de Azure.
   * Crear un clúster nuevo, mediante el portal de Azure.
