@@ -1,14 +1,16 @@
-<p text-align: center> #Proyecto realizado para el módulo de proyecto de ASIR sobre Kubernetes.</p>
+# Kube-Magic
+
+Proyecto realizado para el módulo de proyecto de ASIR sobre Kubernetes.</p>
 
 Con este proyecto lo que pretendo es utilizar Kubernetes y otras herramientas complementarias a esta tecnología para establecer un entorno funcional de distintas aplicaciones desplegándolas a través de Kubernetes, implementando Azure Kubernetes Service y monitorearlas con Prometheus, Grafana y Azure Monitor. Para ello voy a seguir las siguientes partes/fases que he diferenciado de las que constará este proyecto.
 
-**Primera Parte:**
+## Primera Parte:
 
 <p text-align: justify> En esta primera parte voy a explicar de manera general los conceptos básicos necesarios para entender bien que es Kubernetes, cómo funciona y que podemos hacer con él. también repasaremos los conceptos y objetos que forman parte de Kubernetes. Además de cómo yo lo he usado para llevar a cabo mi proyecto. Estimo que esta parte de investigación y documentación me tome toda la duración del proyecto.</p>
 
 ![Alt text](https://github.com/JavierRamirezMoral/Kube-Magic/assets/101793125/2e29e27a-7dad-4717-b9d2-6b3f443cf460)
 
-##Segunda Parte:
+## Segunda Parte:
 
 Voy a desplegar dos aplicaciones para hacer un típico set up de aplicaciones web con bases de datos:
       • Una aplicación Web (Wordpress o Apache, por ejemplo)
@@ -31,7 +33,7 @@ Elementos de configuración que también incluiré en esta parte:
       
 ![Alt text](https://github.com/JavierRamirezMoral/Kube-Magic/assets/101793125/e22e2072-722f-4128-9063-d3b2f2b74abd)
 
-##Tercera Parte:
+## Tercera Parte:
 
 <p text-align: justify> Para esta parte me serviré de Azure Kubernetes Service que es un servicio de orquestación de contenedores completamente administrado que se ejecuta en Microsoft Azure. AKS proporciona un entorno de clúster de Kubernetes que simplifica la implementación, la administración y la escalabilidad de aplicaciones en contenedores. Con AKS, podemos implementar rápidamente aplicaciones de contenedores en un entorno altamente disponible y escalable. Integrar el clúster de la segunda parte. En esta parte lo que pretendo es integrar el clúster donde tenemos el primer escenario ya creado para poder administrarlo de manera más eficiente desde Azure. Y posteriormente montar el segundo set up creando un nuevo clúster con dos aplicaciones desplegadas por HELM en el también para la segunda página web con su correspondiente base de datos.</p>
 
@@ -41,7 +43,7 @@ Elementos de configuración que también incluiré en esta parte:
       
 ![Alt text](https://github.com/JavierRamirezMoral/Kube-Magic/assets/101793125/b45dbb87-9de4-4498-a45c-b7ce11bec03c)
 
-##Cuarta Parte:
+## Cuarta Parte:
 <p text-align: justify> En esta parte vamos a añadir y configurar el monitoreo de nuestro escenario usando las siguientes herramientas que iremos viendo a continuación. Para asegurarnos de que todo funciona correctamente en nuestros escenarios.Con Prometheus, Grafana y Azure Monitor empleando reglas, parámetros y métricas.Azure Monitor es un servicio de monitoreo y diagnóstico de aplicaciones y recursos en la nube de Microsoft Azure. Prometheus es un sistema de monitoreo y alerta de código abierto que se utiliza para recopilar y almacenar métricas de diferentes componentes de un clúster de Kubernetes, como pods, contenedores, nodos, servicios y redes. Grafana, por su parte, es una herramienta de visualización y análisis de datos que permite a los usuarios crear paneles y gráficos personalizados a partir de las métricas recopiladas por Prometheus.</p>
 
 ![Alt text](https://github.com/JavierRamirezMoral/Kube-Magic/assets/101793125/0d7ff5b1-d4f4-489a-804a-041b109ea363)
