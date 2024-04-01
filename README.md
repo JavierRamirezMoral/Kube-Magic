@@ -12,8 +12,8 @@ _Proyecto realizado para el módulo de proyecto de ASIR sobre Kubernetes._
 ## Segunda Parte:
 
 Voy a desplegar dos aplicaciones para hacer un típico set up de aplicaciones web con bases de datos:
-      • Una aplicación Web (Wordpress o Apache, por ejemplo)
-      • Una base de datos (MariaDB o MySQL, por ejemplo)
+* Una aplicación Web (Wordpress o Apache, por ejemplo)
+* Una base de datos (MariaDB o MySQL, por ejemplo)
  <div align="justify"> Primero instalo minikube para crear el clúster y luego me sirvo de kubectl para interactuar y hacer todas las operaciones pertinentes en él. Voy a crear el pod para MariaDB con un Deployment y un internal service para comunicarme con él y que no reciba peticiones del exterior del clúster, solo los elementos que estén dentro del mismo clúster. Después voy a crear el pod para WordPress con un deployment donde tendré la URL de MariaDB dentro de un ConfigMap para poder conectarme a ella. Además de que tendrá  una autentificación para acceder a la base de datos, esto lo haré en el deployment (archivo  yaml) que tendrá dentro definido un Secret con las credenciales. Una vez tenga todo esto, voy a necesitar que Wordpress sea accesible a través de un navegador, para ello voy a crear un External service. Con esto voy a permitir peticiones desde el exterior para hablar con el pod. </div> <br>
 
 Sería algo así: 
